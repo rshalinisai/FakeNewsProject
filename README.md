@@ -3,9 +3,9 @@
 This project handles data processing and feature engineering for detecting fake news using three major datasets: **Fakeddit**, **Weibo**, and **FakeNewsNet**. The goal is to combine text and image data to create a robust feature set for machine learning models.
 
 ## Datasets
-- **Fakeddit**: A dataset sourced from Reddit, consisting of both rumor and non-rumor posts. Each post contains metadata, text, and images.
-- **Weibo**: A collection of tweets from the Weibo platform, labeled as rumors or non-rumors. Each tweet contains metadata, text, and associated images.
-- **FakeNewsNet**: A dataset containing news articles with labels indicating whether they are fake or real, along with relevant metadata and images.
+- **[Fakeddit](https://github.com/entitize/Fakeddit)**: A dataset sourced from Reddit, consisting of both rumor and non-rumor posts. Each post contains metadata, text, and images.
+- **[Weibo](https://github.com/yaqingwang/EANN-KDD18/tree/master/data/weibo)**: A collection of tweets from the Weibo platform, labeled as rumors or non-rumors. Each tweet contains metadata, text, and associated images.
+- **[FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet)**: A dataset containing news articles with labels indicating whether they are fake or real, along with relevant metadata and images.
 
 ## Folder Structure
 - `data/`: This folder contains the raw data for the three datasets.
@@ -20,3 +20,12 @@ This project handles data processing and feature engineering for detecting fake 
     - `feature_engineering.py`: Code for feature engineering (text and image features).
 - `requirements.txt`: Python dependencies needed for the project.
 - `.gitignore`: A list of files/folders that should not be committed to the repository (e.g., `.pyc` files, temporary files, etc.).
+
+## Workflow Diagram 
+<img src="assets/data_processing_workflow.png" alt="Data Processing Workflow" width="1000"/>
+
+## Acknowledgments
+The datasets used in this project are from the following repositories:
+- [Fakeddit Dataset](https://github.com/entitize/Fakeddit)
+- [FakeNewsNet Dataset](https://github.com/KaiDMML/FakeNewsNet)
+- [Weibo Dataset](https://github.com/yaqingwang/EANN-KDD18/tree/master/data/weibo)
