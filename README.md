@@ -14,18 +14,25 @@ This project handles data processing and feature engineering for detecting fake 
     - `fakeddit/`: Processed Fakeddit dataset.
     - `image_dump/`: A folder where all the images from different sources are stored.
 - `scripts/`: Python scripts for processing the datasets, performing feature engineering, and saving the processed data.
-    - `process_fakeddit.py`: Script to process Fakeddit dataset and scrape Reddit URLs.
-    - `process_weibo.py`: Script to process Weibo dataset and scrape article URLs.
-    - `process_fakenewsnet.py`: Script to process the FakeNewsNet dataset.
-    - `feature_engineering.py`: Code for feature engineering (text and image features).
+    - `data_processing`: Notebooks for data preprocessing and joining of the datasets
+    - `feature_engineering`: Notebook for feature engineering
+    - `model`: Notebook for model training and evaluation
 - `requirements.txt`: Python dependencies needed for the project.
-- `.gitignore`: A list of files/folders that should not be committed to the repository (e.g., `.pyc` files, temporary files, etc.).
 
-## Workflow Diagram 
+## Workflow
+We preprocessing each dataset using scripts in `scripts/data_processing`. 
+
 <img src="assets/data_processing_workflow.png" alt="Data Processing Workflow" width="1000"/>
+
+The processed dataset is then saved on **[Kaggle](https://www.kaggle.com/datasets/siruitan/fakenewsproject?select=image_dump+2)**.
+
+We then apply feature extraction using `scripts/feature_engineering.ipynb`, and the resulting dataframe is saved on **[Google Drive](https://drive.google.com/file/d/1BtqdkDHTEWHTfIyV8AlMJ1paVPLibe1H/view?usp=sharing)**
+
+Finally, train our models using the notebook under `scripts/models/model_train_eval.ipynb`.
 
 ## Acknowledgments
 The datasets used in this project are from the following repositories:
 - [Fakeddit Dataset](https://github.com/entitize/Fakeddit)
 - [FakeNewsNet Dataset](https://github.com/KaiDMML/FakeNewsNet)
 - [Weibo Dataset](https://github.com/yaqingwang/EANN-KDD18/tree/master/data/weibo)
+
