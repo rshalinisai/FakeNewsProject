@@ -87,19 +87,20 @@ jupyter notebook scripts/model/model_train_eval.ipynb
 
 ## Workflow
 
-<img src="assets/full_workflow.png" alt="Data Processing Workflow" width="1000"/>
+<img src="assets/full_workflow.png" alt="Data Processing Workflow"/>
 
 ## Results
 Below are the evaluation metrics of our multimodal model on the test set. 
 For more details refer to [model_train_eval.ipynb](scripts/model/model_train_eval.ipynb).
 
-<div style="display: flex; justify-content: space-between; gap: 20px;">
+### Confusion Matrix
+<img src="assets/test_confusion_matrix.jpg" alt="Confusion Matrix" width = 500/>
 
-  <img src="assets/test_confusion_matrix.jpg" alt="Confusion Matrix" style="width: 30%;">
-  <img src="assets/test_classification_report.jpg" alt="Classification Report" style="width: 30%;">
-  <img src="assets/test_roc_auc_curve.jpg" alt="ROC AUC Curve" style="width: 30%;">
+### Precision, Recall, F1 Score
+<img src="assets/test_classification_report.jpg" alt="Classification Report" width = 500/>
 
-</div>
+### ROC-AUC Curve
+<img src="assets/test_roc_auc_curve.jpg" alt="ROC AUC Curve" width = 500/>
 
 ## Acknowledgments
 The datasets used in this project are from the following repositories:
