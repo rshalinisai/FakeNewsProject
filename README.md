@@ -1,6 +1,6 @@
-# Fake News Detection - Multi-Dataset Processing and Feature Engineering
+# Multimodal Fake News Detection Ensemble for Combating Online Misinformation
 
-This project handles data processing and feature engineering for detecting fake news using three major datasets: **Fakeddit**, **Weibo**, and **FakeNewsNet**. The goal is to combine text and image data to create a robust feature set for machine learning models.
+This project involves curating and integrating three major fake news datasets—Fakeddit, Weibo, and FakeNewsNet—followed by extensive feature engineering and the development of a deep learning model. By combining textual, visual, and metadata features across multiple languages, the project aims to build a robust multilingual, multimodal system for fake news classification.
 
 ## Datasets
 - **[Fakeddit](https://github.com/entitize/Fakeddit)**: A dataset sourced from Reddit, consisting of both rumor and non-rumor posts. Each post contains metadata, text, and images.
