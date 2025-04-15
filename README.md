@@ -19,6 +19,8 @@ This project involves curating and integrating three major fake news datasets—
     - `model`: Notebook for model training and evaluation
 - `requirements.txt`: Python dependencies needed for the project.
 
+Note: GitHub may not render Jupyter notebooks correctly if they were created using Google Colab, particularly due to compatibility issues with interactive widget metadata. However, all .ipynb files in this repository can be downloaded and opened locally in Jupyter Notebook or Colab with full outputs preserved. This includes all model outputs, visualizations, and metrics.
+
 ## Setup Guide
 
 ### Prerequisites
