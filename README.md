@@ -19,6 +19,72 @@ This project involves curating and integrating three major fake news datasets—
     - `model`: Notebook for model training and evaluation
 - `requirements.txt`: Python dependencies needed for the project.
 
+## Setup Guide
+
+### Prerequisites
+- Python 3.11 or higher
+- Git
+- Pip package manager
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/FakeNewsProject.git
+   cd FakeNewsProject
+   ```
+
+2. Create and activate a virtual environment (recommended):
+   ```
+   python -m venv venv
+   # On Windows
+   venv\Scripts\activate
+   # On macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Configure environment variables:
+   - Copy the `.env_sample` file to `.env`
+   ```
+   cp .env_sample .env
+   ```
+   - Edit the `.env` file and add your Reddit API credentials (required for scraping Fakeddit data)
+
+### Dataset Setup
+
+The datasets used in this project are large. Two options are available:
+
+1. Download the processed datasets:
+   - The processed dataset is available on **[Kaggle](https://www.kaggle.com/datasets/siruitan/fakenewsproject?select=image_dump+2)**
+   - The feature-engineered dataframe is available on **[Google Drive](https://drive.google.com/file/d/1BtqdkDHTEWHTfIyV8AlMJ1paVPLibe1H/view?usp=sharing)**
+
+2. Process the datasets from scratch:
+   - Run the data processing notebooks in the `scripts/data_processing` directory in the following order:
+     1. `(FakeNewsNet) fakenewsnet_preprocessing.ipynb`
+     2. `(Weibo) weibo_preprocessing.ipynb`
+     3. `(Fakeddit) reddit_scraper.ipynb`
+     4. `(Fakeddit) article_image_scraper.ipynb`
+     5. `final_dataset_preperation.ipynb`
+
+### Running Feature Engineering
+
+After setting up the datasets, run the feature engineering notebook:
+```
+jupyter notebook scripts/feature_engineering/feature_engineering.ipynb
+```
+
+### Training and Evaluating Models
+
+Run the model training and evaluation notebook:
+```
+jupyter notebook scripts/model/model_train_eval.ipynb
+```
+
 ## Workflow
 We preprocessing each dataset using scripts in `scripts/data_processing`. 
 
