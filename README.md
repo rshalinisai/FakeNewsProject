@@ -86,15 +86,20 @@ jupyter notebook scripts/model/model_train_eval.ipynb
 ```
 
 ## Workflow
-We preprocessing each dataset using scripts in `scripts/data_processing`. 
 
-<img src="assets/data_processing_workflow.png" alt="Data Processing Workflow" width="1000"/>
+<img src="assets/full_workflow.png" alt="Data Processing Workflow" width="1000"/>
 
-The processed dataset is then saved on **[Kaggle](https://www.kaggle.com/datasets/siruitan/fakenewsproject?select=image_dump+2)**.
+## Results
+Below are the evaluation metrics of our multimodal model on the test set. 
+For more details refer to [model_train_eval.ipynb](scripts/model/model_train_eval.ipynb).
 
-We then apply feature extraction using `scripts/feature_engineering.ipynb`, and the resulting dataframe is saved on **[Google Drive](https://drive.google.com/file/d/1BtqdkDHTEWHTfIyV8AlMJ1paVPLibe1H/view?usp=sharing)**
+<div style="display: flex; justify-content: space-between; gap: 20px;">
 
-Finally, train our models using the notebook under `scripts/models/model_train_eval.ipynb`.
+  <img src="assets/test_confusion_matrix.jpg" alt="Confusion Matrix" style="width: 30%;">
+  <img src="assets/test_classification_report.jpg" alt="Classification Report" style="width: 30%;">
+  <img src="assets/test_roc_auc_curve.jpg" alt="ROC AUC Curve" style="width: 30%;">
+
+</div>
 
 ## Acknowledgments
 The datasets used in this project are from the following repositories:
