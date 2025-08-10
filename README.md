@@ -2,6 +2,8 @@
 
 This project involves curating and integrating three major fake news datasets—Fakeddit, Weibo, and FakeNewsNet—followed by extensive feature engineering and the development of a deep learning model. By combining textual, visual, and metadata features across multiple languages, the project aims to build a robust multilingual, multimodal system for fake news classification.
 
+Report: https://docs.google.com/document/d/18P5IHFZBCZZa9uoN0dCsvX3OWVefIykAAFsvcLglQkI/edit?usp=drive_link
+
 ## Datasets
 - **[Fakeddit](https://github.com/entitize/Fakeddit)**: A dataset sourced from Reddit, consisting of both rumor and non-rumor posts. Each post contains metadata, text, and images.
 - **[Weibo](https://github.com/yaqingwang/EANN-KDD18/tree/master/data/weibo)**: A collection of tweets from the Weibo platform, labeled as rumors or non-rumors. Each tweet contains metadata, text, and associated images.
